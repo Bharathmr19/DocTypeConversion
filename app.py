@@ -121,3 +121,7 @@ elif option == "Convert JPG to PDF":
         if st.button("Convert to PDF"):
             jpg_to_pdf_file = convert_jpg_to_pdf(uploaded_jpg)
             st.download_button("Download PDF", jpg_to_pdf_file, file_name="converted_image.pdf", mime="application/pdf")
+
+# Add a line and footer text at the bottom of the sidebar
+st.sidebar.markdown("---")  # This adds a horizontal line
+st.sidebar.markdown("Made by Bharath Gowda M R")
